@@ -12,3 +12,9 @@ int print_char(va_list types)
 char c = va_arg(types, int);
 return (c);
 }
+
+int print_str(va_list types)
+{
+str s = va_arg(types,*char);
+return (s)
+}
