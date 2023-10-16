@@ -4,6 +4,13 @@
 #include <stdio.h>
 #include <unistd.h>
 
+typedef struct format
+{
+char *id;
+int (*f)();
+}match;
+
+int print_revs(va_list val);
 int _putchar(char c);
 int _printf(const char *format, ...);
 
@@ -22,5 +29,8 @@ int print_hex(va_list val);
 int print_HEX(va_list val);
 int print_HEX_extral(unsigned int num);
 int print_string_5(va_list val);
+int print_hex_extral(unsigned long int num);
+int print_pointer(va_list val);
+int print_rot13(va_list val);
 
 #endif
